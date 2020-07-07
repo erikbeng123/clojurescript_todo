@@ -1,0 +1,14 @@
+nav {
+  background: #11030d;
+  color: var(--font-color-main);
+  z-index: 100;
+}
+
+.menu-list {
+  padding: 0 30px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}

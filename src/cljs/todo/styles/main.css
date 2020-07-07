@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+@import "./normalize.css";
+@import "../components/bottom.styles.css";
+@import "../pages/todos_page.styles.css";
+
+:root {
+  --color-main: #0267c1;
+  --color-background: #f1faee;
+  --color-highlight: #fed766;
+  --color-contrast: #e63946;
+  --color-dark: #231f20;
+  --color-ok: #b0db43;
+  --font-color-main: white;
+  --padding-normal: 20px;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.contents {
+  height: calc(100vh - 50px);
+  overflow: scroll;
+}
