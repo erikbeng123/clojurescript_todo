@@ -32,5 +32,4 @@
  (fn [db]
    (let [todo-data (:todo-data db)
          cur-data (get todo-data (:selected-date db))]
-     (print (:selected-date db))
      cur-data)))

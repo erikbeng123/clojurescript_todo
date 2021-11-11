@@ -3,7 +3,7 @@
             [todo.components.calendar :refer [Calendar]]))
 
 
-(defn Drawer [todos]
+(defn Drawer [todos display-mode]
   [:div.drawer
    [:div.drawer-head
     [:span.handle]]
@@ -32,8 +32,9 @@
    (Calendar
     (.getDate current-date)
     (.getMonth current-date)
-    (.getFullYear current-date))
-   (Drawer todo-data)
+    (.getFullYear current-date)
+    "full-calendar")
+   (Drawer todo-data "full-calendar")
    [:button.add-btn
     {:on-click #(re-frame.core/dispatch [:set-add-form-step {:step 1}])}
     [:span "+"]]])
